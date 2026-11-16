@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jenny Forth Global | Building Dreams. Creating Legacies.</title>
+<meta name="description" content="Jenny Forth is an international speaker, published author, luxury real estate and investment professional, podcast host, and breakthrough strategist. Building Dreams. Creating Legacies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#060b18;
+    --navy-2:#0a1226;
+    --panel:#0d1730;
+    --gold:#c9a24b;
+    --gold-soft:#e6cf8f;
+    --cream:#f4efe4;
+    --muted:#a8b0c2;
+    --line:rgba(201,162,75,.35);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--navy);color:var(--cream);font-family:'Inter',sans-serif;font-weight:300;line-height:1.7}
+  h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600;line-height:1.2}
+  a{color:var(--gold-soft)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:.72rem;color:var(--gold);font-weight:500}
+  section{padding:88px 0}
+  .rule{width:64px;height:1px;background:var(--gold);margin:18px 0 26px}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(6,11,24,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1080px;margin:0 auto}
+  .nav img{height:44px;width:auto;display:block}
+  .nav .links a{color:var(--cream);text-decoration:none;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-left:26px}
+  .nav .links a:hover{color:var(--gold-soft)}
+  @media(max-width:760px){.nav .links{display:none}}
+
+  .hero{background:radial-gradient(ellipse at top, #12224a 0%, var(--navy) 62%);text-align:center;padding:110px 0 90px}
+  .hero img.logo{max-width:340px;width:80%;height:auto;margin-bottom:34px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.2rem);margin:14px 0 6px}
+  .hero .tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.2rem,3vw,1.6rem);color:var(--gold-soft)}
+  .hero .roles{margin:26px auto 8px;max-width:760px;color:var(--muted);font-size:1rem;letter-spacing:.04em}
+  .hero .motto{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);margin-top:18px}
+  .btn{display:inline-block;margin-top:36px;padding:15px 38px;border:1px solid var(--gold);color:var(--navy);background:linear-gradient(180deg,var(--gold-soft),var(--gold));text-decoration:none;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;border-radius:2px}
+  .btn:hover{filter:brightness(1.07)}
+  .btn.ghost{background:transparent;color:var(--gold-soft);margin-left:12px}
+  @media(max-width:560px){.btn.ghost{margin-left:0;margin-top:14px}}
+
+  .quote{background:var(--navy-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;padding:64px 0}
+  .quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.3rem,3.4vw,1.9rem);max-width:820px;margin:0 auto;color:var(--cream)}
+  .quote span{display:block;margin-top:16px;font-family:'Inter',sans-serif;font-style:normal;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  section h2{font-size:clamp(1.9rem,4vw,2.6rem)}
+  section p{color:var(--muted);margin-bottom:16px}
+  section p strong{color:var(--cream);font-weight:500}
+  .alt{background:var(--navy-2)}
+  .book-img{text-align:center}
+  .book-img img{max-width:280px;width:100%;height:auto;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:36px}
+  .card{background:var(--panel);border:1px solid var(--line);padding:30px 28px;border-radius:3px}
+  .card h3{color:var(--gold-soft);font-size:1.25rem;margin-bottom:10px}
+  .card p{margin:0;font-size:.96rem}
+
+  footer{background:#04070f;border-top:1px solid var(--line);padding:70px 0 40px;text-align:center}
+  footer .addr{color:var(--muted);margin-top:14px}
+  footer .phone{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--gold-soft);text-decoration:none;display:inline-block;margin-top:10px}
+  footer .fine{margin-top:34px;font-size:.8rem;color:#5f6a82}
+  footer a{color:var(--gold-soft)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#top"><img src="assets/logo.jpg" alt="Jenny Forth Global logo"></a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#book">The Book</a>
+      <a href="#realestate">Real Estate</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <img class="logo" src="assets/logo.jpg" alt="Jenny Forth Global">
+    <p class="eyebrow">Jenny Forth Global</p>
+    <h1>Jenny Forth</h1>
+    <p class="tagline">Building Dreams. Creating Legacies.</p>
+    <p class="roles">International Speaker &nbsp;|&nbsp; Published Author &nbsp;|&nbsp; Luxury Real Estate &amp; Investment Professional &nbsp;|&nbsp; Podcast Host &nbsp;|&nbsp; Breakthrough Strategist</p>
+    <p class="motto">Think Bigger. Build Wealth. Live Without Limits.</p>
+    <a class="btn" href="tel:+17542846085">Call 754-284-6085</a>
+    <a class="btn ghost" href="https://www.jennyforth.com" target="_blank" rel="noopener">Visit JennyForth.com</a>
+  </div>
+</section>
+
+<div class="quote">
+  <div class="wrap">
+    <p>&ldquo;Wealth is not measured by how much you can buy. It is measured by how much of your life you own.&rdquo;</p>
+    <span>Jenny Forth</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
+    <h2>Ambition Meets Opportunity</h2>
+    <div class="rule"></div>
+    <p>Welcome to <strong>Jenny Forth Global</strong>, where ambition meets opportunity, vision becomes strategy, and extraordinary lives are built through purposeful action.</p>
+    <p>Jenny Forth is an international speaker, published author, luxury real estate professional, investor, podcast host, and breakthrough strategist. Her work connects the worlds of personal growth, entrepreneurship, wealth creation, international real estate, and media through one powerful mission: to help people see beyond their current circumstances, recognize greater possibilities, and build a life defined by success, freedom, and purpose.</p>
+    <p>Her philosophy is simple. <strong>Stay committed to the vision. Be willing to change the strategy. Never stop moving forward.</strong> Because your greatest achievements should never become the limits of your future.</p>
+  </div>
+</section>
+
+<section id="speaking" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Speaking</p>
+    <h2>International Speaker</h2>
+    <div class="rule"></div>
+    <p>Through powerful storytelling, practical strategies, and engaging audience experiences, Jenny delivers presentations designed to create those unforgettable moments when a new perspective changes everything.</p>
+    <p>From international business and real estate investments to speaking on influential stages and interviewing inspiring leaders, her message helps ambitious individuals, entrepreneurs, and investors pursue their next level of success.</p>
+    <a class="btn" href="tel:+17542846085">Book Jenny to Speak</a>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap grid">
+    <div class="book-img">
+      <img src="assets/book.png" alt="Building A Life Without Limits by Jenny Forth, book cover">
+    </div>
+    <div>
+      <p class="eyebrow">The Book</p>
+      <h2>Building A Life Without Limits</h2>
+      <div class="rule"></div>
+      <p><strong>Now published and available on Amazon.</strong></p>
+      <p><em>Building A Life Without Limits</em> is about breaking free from limiting beliefs, thinking bigger, and creating greater success, wealth, and freedom in your life. It combines personal growth with entrepreneurship and practical wealth-building, drawing on real-world entrepreneurial experience and personal transformation.</p>
+      <p>It is the entrepreneur's blueprint for pursuing an extraordinary future.</p>
+      <a class="btn" href="https://www.jennyforth.com" target="_blank" rel="noopener">Get the Book</a>
+    </div>
+  </div>
+</section>
+
+<section id="realestate" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Real Estate</p>
+    <h2>Luxury Real Estate &amp; Investment</h2>
+    <div class="rule"></div>
+    <p>Luxury properties, pre-construction developments, and real estate investment opportunities across <strong>South Florida and select international markets</strong>. With a global perspective, Jenny connects buyers and investors with opportunities that build lasting wealth.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Luxury Properties</h3>
+        <p>Exceptional homes and residences across South Florida's most sought-after markets.</p>
+      </div>
+      <div class="card">
+        <h3>Pre-Construction</h3>
+        <p>Early access to new developments, positioned for growth from the ground up.</p>
+      </div>
+      <div class="card">
+        <h3>Investment Opportunities</h3>
+        <p>Real estate investment opportunities in South Florida and select international markets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="coaching">
+  <div class="wrap">
+    <p class="eyebrow">Coaching</p>
+    <h2>Breakthrough Coaching</h2>
+    <div class="rule"></div>
+    <p>Coaching programs designed to help ambitious individuals and entrepreneurs gain <strong>clarity, strengthen their mindset, build confidence, and create measurable progress</strong> toward their goals. Move beyond inspiration with structured action.</p>
+    <p>Whether that means building wealth through international real estate, strengthening your mindset, elevating your personal brand, expanding your influence, or creating a breakthrough in your business and life, everything begins with the courage to think bigger.</p>
+    <a class="btn" href="tel:+17542846085">Start the Conversation</a>
+  </div>
+</section>
+
+<div class="quote">
+  <div class="wrap">
+    <p>&ldquo;Confidence doesn't come before action. Confidence comes from action.&rdquo;</p>
+    <span>Jenny Forth</span>
+  </div>
+</div>
+
+<section id="podcast">
+  <div class="wrap">
+    <p class="eyebrow">Podcast &amp; Media</p>
+    <h2>Conversations That Build Extraordinary Lives</h2>
+    <div class="rule"></div>
+    <p>Join Jenny Forth for insightful conversations with entrepreneurs, industry leaders, innovators, and influential personalities about <strong>success, leadership, wealth, resilience</strong>, and the decisions that shape extraordinary lives.</p>
+  </div>
+</section>
+
+<section id="foundation" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Giving Back</p>
+    <h2>Jenny's Human Rights Foundation</h2>
+    <div class="rule"></div>
+    <p>Jenny's Human Rights Foundation supports <strong>survivors of domestic violence and human trafficking</strong>. The foundation helps survivors regain confidence, independence, and hope, because everyone deserves to rebuild their lives.</p>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Build Your Life Without Limits</h2>
+    <p class="addr">Jenny Forth Global<br>801 South Ocean Drive<br>Hollywood, FL 33019-2126</p>
+    <a class="phone" href="tel:+17542846085">754-284-6085</a>
+    <p class="addr">Learn more at <a href="https://www.jennyforth.com" target="_blank" rel="noopener">jennyforth.com</a></p>
+    <p class="fine">Jenny Forth Global &middot; Building Dreams. Creating Legacies.</p>
+  </div>
+</footer>
+
+</body>
+</html>
